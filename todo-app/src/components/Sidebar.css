@@ -1,0 +1,138 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #e8f5e9 0%, #c8e6c9 100%);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  padding: 0 20px 20px;
+  border-bottom: 2px dashed #a5d6a7;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #2e7d32;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.smart-lists, .categories-section {
+  padding: 0 12px;
+}
+
+.smart-lists {
+  margin-bottom: 20px;
+}
+
+.categories-section h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #66bb6a;
+  letter-spacing: 1px;
+  margin: 0 0 10px 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #37474f;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-item.active {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.15);
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.sidebar-item .icon {
+  font-size: 1.1rem;
+}
+
+.category-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.add-category-btn {
+  color: #66bb6a;
+  font-weight: 500;
+}
+
+.add-category-form {
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-category-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.add-category-form input:focus {
+  border-color: #66bb6a;
+}
+
+.add-category-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.add-category-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.add-category-buttons button:first-child {
+  background: #66bb6a;
+  color: white;
+}
+
+.add-category-buttons button:first-child:hover {
+  background: #4caf50;
+}
+
+.add-category-buttons button:last-child {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.add-category-buttons button:last-child:hover {
+  background: #e0e0e0;
+}
