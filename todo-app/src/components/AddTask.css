@@ -1,0 +1,75 @@
+.add-task {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.input-wrapper {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 3px solid #e0e0e0;
+  border-radius: 16px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+  background: #fff;
+}
+
+.task-input:focus {
+  border-color: #81c784;
+  box-shadow: 0 0 0 4px rgba(129, 199, 132, 0.2);
+}
+
+.category-select {
+  padding: 14px 16px;
+  border: 3px solid #e0e0e0;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-select:focus {
+  border-color: #81c784;
+}
+
+.add-btn {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(102, 187, 106, 0.4);
+}
+
+.add-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 187, 106, 0.5);
+}
+
+.add-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.add-btn:disabled {
+  background: #bdbdbd;
+  box-shadow: none;
+  cursor: not-allowed;
+}

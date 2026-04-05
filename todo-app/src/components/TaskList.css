@@ -1,0 +1,30 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.task-list-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.task-list-empty h3 {
+  margin: 0 0 8px;
+  color: #66bb6a;
+  font-size: 1.5rem;
+}
+
+.task-list-empty p {
+  margin: 0;
+  color: #9e9e9e;
+  font-size: 1rem;
+}
